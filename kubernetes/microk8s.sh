@@ -1,4 +1,4 @@
-sudp apt-get update
+sudo apt-get update
 sudo apt install snapd
 
 sudo snap install microk8s --classic --channel=1.21
