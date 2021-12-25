@@ -20,7 +20,7 @@ docker --version
 sudo groupadd docker
 #sudo usermod -aG docker $USER
 sudo usermod -aG docker $USER && newgrp docker
-# CHange DOcker logging
+# Change Docker logging
 #sudo nano /etc/docker/daemon.json
 # {
 #   "log-driver": "local",
