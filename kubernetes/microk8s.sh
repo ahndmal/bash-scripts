@@ -21,6 +21,6 @@ sudo chown -f -R $USER ~/.kube
 
 su - $USER
 echo "permissions configures"
-microk8s status --wait-ready
+#microk8s status --wait-ready # - disabled for now
 
 microk8s enable dashboard dns ingress istio
