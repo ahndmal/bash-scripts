@@ -1,5 +1,7 @@
 sudo apt-get update
 
+sudo apt install git
+
 #### Tools
 yes | sudo apt-get install curl
 yes | sudo apt-get install zip
@@ -33,7 +35,6 @@ sudo usermod -aG docker $USER && newgrp docker
 #     "max-size": "10m"
 #   }
 # }
-
 
 ### Docker-Compose
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
