@@ -70,14 +70,14 @@ yes | sudo apt install python3-certbot-nginx
 # sudo nano /etc/nginx/sites-available/default
 sudo \cp -r nginx_domain_example /etc/nginx/sites-available/default # -> change file according to your domain before copying
 # sudo scp configureServer.sh root@23.88.99.93:/root/docker/config.sh
-# server_name dev.beastiehut.cyou;
+# server_name dev.domain.cyou;
 sudo nginx -t
 sudo systemctl reload nginx
 sudo ufw allow 'Nginx Full' && sudo ufw delete allow 'Nginx HTTP'
 
 #### Certbot
 #sudo certbot --nginx -d example.com -d www.example.com
-sudo certbot --nginx -d comments.beastiehut.cyou	# # -> Add necessary domain/sub-domain
+sudo certbot --nginx -d comments.domain.cyou	# # -> Add necessary domain/sub-domain
 sudo certbot renew --dry-run
 #sudo nano /etc/nginx/sites-available/default # add proxy data to /location {}
 
