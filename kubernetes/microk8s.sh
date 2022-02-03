@@ -8,7 +8,14 @@
 # su - $USER
 # microk8s status --wait-ready
 
-yes | sudo apt-get update
+#nano /etc/docker/daemon.json
+#{
+#    "insecure-registries" : ["localhost:32000"] 
+#}
+## install snapd for Linux Mint
+# repare
+sudo mv /etc/apt/preferences.d/nosnap.pref ~/Documents/nosnap.backup
+sudo apt update -y
 
 yes | sudo apt install snapd
 echo "snapd installed"
@@ -24,3 +31,22 @@ echo "permissions configures"
 #microk8s status --wait-ready # - disabled for now
 
 microk8s enable dashboard dns ingress istio
+
+##################
+
+sudo apt install snapd -y
+#yes | sudo apt install snapd
+echo "snapd installed"
+
+sudo snap install microk8s --classic
+echo "microk8s installed"
+
+sudo usermod -a -G microk8s $USER
+sudo chown -f -R $USER ~/.kube
+
+su - $USER
+echo "permissions configures"
+microk8s status --wait-ready
+
+microk8s enable dashboard dns registry ingress istio
+
