@@ -1,4 +1,11 @@
-yes | sudo apt install snapd
+# repare
+sudo mv /etc/apt/preferences.d/nosnap.pref ~/Documents/nosnap.backup
+sudo apt update -y
+
+## install snapd for Linux Mint
+
+sudo apt install snapd -y
+#yes | sudo apt install snapd
 echo "snapd installed"
 
 sudo snap install microk8s --classic
