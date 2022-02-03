@@ -1,3 +1,8 @@
+#nano /etc/docker/daemon.json
+#{
+#    "insecure-registries" : ["localhost:32000"] 
+#}
+
 # repare
 sudo mv /etc/apt/preferences.d/nosnap.pref ~/Documents/nosnap.backup
 sudo apt update -y
