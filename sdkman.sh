@@ -21,3 +21,7 @@ sdk i groovy 4.0.0 -y
 
 #sdk use java 8.0.302-open
 sdk default java 8.0.302-open
+
+#quarkus/spring
+sdk install quarkus
+sdk install spring
