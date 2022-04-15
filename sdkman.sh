@@ -7,7 +7,7 @@ sdk version
 echo "zip/unzip/SDK installed!"
 
 # java
-sdk i java 8.0.302-open -y
+sdk i java 8.0.302-open -y  # change to the latest !
 sdk i java 11.0.12-open -y
 sdk i java 17.0.2-open -y
 
