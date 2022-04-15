@@ -6,13 +6,14 @@ sudo apt-get install \
     ca-certificates \
     curl \
     gnupg \
-    lsb-release
+    lsb-release -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo \
   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 yes | sudo apt-get update
-yes | sudo apt-get install docker-ce docker-ce-cli containerd.io
+echo ">>> soft updated!"
+sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 echo "Docker installed!"
 docker --version
 
@@ -20,6 +21,7 @@ docker --version
 sudo groupadd docker
 #sudo usermod -aG docker $USER
 sudo usermod -aG docker $USER && newgrp docker
+echo ">>> groups configured!"
 # Change Docker logging
 #sudo nano /etc/docker/daemon.json
 # {
