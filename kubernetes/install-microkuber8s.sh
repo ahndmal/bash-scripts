@@ -18,6 +18,7 @@ echo "microk8s installed"
 
 sudo usermod -a -G microk8s $USER
 sudo chown -f -R $USER ~/.kube
+newgrp microk8s
 
 su - $USER
 echo "permissions configures"
