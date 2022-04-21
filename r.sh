@@ -17,3 +17,9 @@ add-apt-repository ppa:c2d4u.team/c2d4u4.0+
 
 # add repos
 sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev
+
+sudo apt install zypper
+sudo zypper install unixODBC-devel
+
+sudo apt install unixodbc-dev
+sudo apt-get install libpq-dev
