@@ -14,3 +14,6 @@ sudo apt install --no-install-recommends r-base
 
 # add 5000 dps
 add-apt-repository ppa:c2d4u.team/c2d4u4.0+
+
+# add repos
+sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev
