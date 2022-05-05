@@ -21,3 +21,9 @@ chmod 444 .vim/hotkeys
 vim .vimrc 
 
 sudo apt-get install ripgrep 
+
+############# VIM #################
+:PlugInstall
+:CocInstall coc-pyright
+:CocInstall coc-tsserver
+:CocInstall coc-go
