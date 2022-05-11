@@ -5,22 +5,18 @@ sudo apt install vim
 
 git clone https://github.com/selikapro/vimrc-likapro
 
-#cd .vim
-cd vimrc-likapro/
+mv vimrc-likapro/.vimrc ./
+
 # https://github.com/junegunn/vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-mv vimrc-likapro/.vimrc ./
-
-cd .vim/
 
 cp vimrc-likapro/hotkeys .vim
 chmod 444 .vim/hotkeys 
 
 vim .vimrc 
 
-sudo apt-get install ripgrep 
+sudo apt-get install ripgrep -y
 
 ############# VIM #################
 :PlugInstall
