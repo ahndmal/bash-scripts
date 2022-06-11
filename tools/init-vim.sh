@@ -23,3 +23,4 @@ sudo apt-get install ripgrep -y
 :CocInstall coc-pyright
 :CocInstall coc-tsserver
 :CocInstall coc-go
+
