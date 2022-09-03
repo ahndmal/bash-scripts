@@ -3,5 +3,9 @@
 
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
+export NVM_DIR="$HOME/.nvm"
+
 nvm install node # "node" is an alias for the latest version
 #nvm install 14.7.0 # or 16.3.0, 12.22.1, etc
+
+
