@@ -9,7 +9,7 @@ echo "zip/unzip/SDK installed!"
 # java
 sdk i java 8.0.302-open -y  # change to the latest !
 sdk i java 11.0.12-open -y
-sdk i java 18.0.2-open -y
+# sdk i java 18.0.2-open -y
 
 # maven / gradle
 yes | sdk i maven 3.8.6
@@ -24,4 +24,4 @@ sdk default java 8.0.302-open
 
 #quarkus/spring
 sdk install quarkus
-sdk install spring
+sdk install springboot
