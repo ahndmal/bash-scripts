@@ -25,3 +25,6 @@ sdk default java 8.0.302-open
 #quarkus/spring
 sdk install quarkus
 sdk install springboot
+
+echo ">>> restarting BASH"
+exec bash
