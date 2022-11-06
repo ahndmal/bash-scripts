@@ -10,3 +10,7 @@ ghcup install cabal 3.2.0.0
 #  ghcup tui
 
 #If you are new to Haskell, check out https://www.haskell.org/ghcup/steps/
+
+# resolve /usr/bin/ld: cannot find -lgmp error
+sudo apt-get install libgmp3-dev
+
