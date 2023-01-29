@@ -1,7 +1,4 @@
 
-
-
-
 # oh my ash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -29,3 +26,4 @@ fisher install jethrokuan/z
 # ls replacement
 sudo apt install exa -y
 
+sudo apt install -y peco
