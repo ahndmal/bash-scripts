@@ -8,4 +8,4 @@ curl https://github.com/AndriiMaliuta/bash-scripts
 chmod -R +x .
 
 
-
+sudo apt-get install build-essential libz-dev zlib1g-dev
