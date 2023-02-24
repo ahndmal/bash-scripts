@@ -1,0 +1,11 @@
+
+# artillery https://www.artillery.io/
+npm install -g artillery
+
+
+# curl https://pyenv.run | bash
+# pyenv install 3.10.4
+
+# locust https://docs.locust.io/en/stable/installation.html
+pip3 install locust
+
