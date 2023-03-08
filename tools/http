@@ -8,4 +8,8 @@ npm install -g artillery
 
 # locust https://docs.locust.io/en/stable/installation.html
 pip3 install locust
-
+ 
+# apache ab https://httpd.apache.org/docs/2.4/programs/ab.html
+sudo apt-get install apache2-utils -y
+# sudo apt-get install apache2
+# ab -n 100 -c 10 https://www.apache.org/
