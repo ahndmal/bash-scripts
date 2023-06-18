@@ -7,5 +7,10 @@ curl https://github.com/AndriiMaliuta/bash-scripts
 
 chmod -R +x .
 
-
 sudo apt-get install build-essential libz-dev zlib1g-dev
+
+chmod -R +x .
+
+./cli/configure_ZSH.sh 
+./tools/sdkman.sh
+
