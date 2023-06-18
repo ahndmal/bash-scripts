@@ -13,8 +13,24 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 # npm install -g secman
 
-## Colors
+### Colors
 
-### exa (https://github.com/ogham/exa)
-# wget https://github.com/ogham/exa/releases/download/v0.10.0/exa-linux-x86_64-v0.10.0.zip
-sudo apt install exa
+## Install EXA (https://github.com/ogham/exa) 
+# https://the.exa.website/
+
+EXA_VERSION=$(curl -s "https://api.github.com/repos/ogham/exa/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
+curl -Lo exa.zip "https://github.com/ogham/exa/releases/latest/download/exa-linux-x86_64-v${EXA_VERSION}.zip"
+sudo unzip -q exa.zip bin/exa -d /usr/local
+exa --version
+rm -rf exa.zip
+exa /etc -lhgi
+
+# sudo apt install exa
+
+echo ZSH_THEME="powerlevel10k/powerlevel10k" >> ~/.zshrc
+echo "plugins=( git zsh-syntax-highlighting zsh-autosuggestions )" >> ~/.zshrc
+
+## configure zsh plugins
+p10k configure
+
+source ~/.zshrc
