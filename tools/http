@@ -1,15 +1,15 @@
 
-# artillery https://www.artillery.io/
+### artillery https://www.artillery.io/
 npm install -g artillery
 
 
-# curl https://pyenv.run | bash
+### curl https://pyenv.run | bash
 # pyenv install 3.10.4
 
-# locust https://docs.locust.io/en/stable/installation.html
+### locust https://docs.locust.io/en/stable/installation.html
 pip3 install locust
  
-# apache ab https://httpd.apache.org/docs/2.4/programs/ab.html
-sudo apt-get install apache2-utils -y
+### apache ab https://httpd.apache.org/docs/2.4/programs/ab.html
+sudo apt-get install -y apache2-utils
 # sudo apt-get install apache2
 # ab -n 100 -c 10 https://www.apache.org/
