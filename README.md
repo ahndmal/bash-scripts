@@ -7,12 +7,20 @@ https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generati
 
 Generate SSH: ``` ssh-keygen -t ed25519 -C "quadr988@gmail.com" ```
 
+## Fonts
+- FiraCode
+    ``` wget https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip
+        sudo apt install -y fonts-firacode
+    ```
+- Powerline (https://github.com/powerline/fonts) 
+
 ## Tools
 
 - Oh My ZSH (https://ohmyz.sh/)
 - Helix editor (https://docs.helix-editor.com/keymap.html)
 - nvim
 - docker (https://docs.docker.com/engine/install/ubuntu/)
+- snapd
 - 
 
 ### Atlassian
@@ -32,7 +40,7 @@ Generate SSH: ``` ssh-keygen -t ed25519 -C "quadr988@gmail.com" ```
 - JDTLS
   - https://github.com/eclipse-jdtls/eclipse.jdt.ls
   - https://download.eclipse.org/jdtls/milestones/?d 
-     ``` wget https://www.eclipse.org/downloads/download.php?file=/jdtls/milestones/1.9.0/jdt-language-server-1.9.0-202203031534.tar.gz ```
+     ```bash wget https://www.eclipse.org/downloads/download.php?file=/jdtls/milestones/1.9.0/jdt-language-server-1.9.0-202203031534.tar.gz ```
 
 ### Node
 
@@ -47,7 +55,8 @@ Generate SSH: ``` ssh-keygen -t ed25519 -C "quadr988@gmail.com" ```
 - https://go.dev/dl/
 
 ### Rust
-
+- https://www.rust-lang.org/tools/install
+```bash curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh ```
 
 ### WASM
 
