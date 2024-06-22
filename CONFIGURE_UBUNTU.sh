@@ -48,3 +48,11 @@ sdk i java 8.0.412-tem
 
 wget https://go.dev/dl/go1.22.4.linux-amd64.tar.gz
 tar -xvf go1.22.4.linux-amd64.tar.gz
+
+#### GCP
+
+./gcloud/install-gcp-cli.sh
+
+
+
+
