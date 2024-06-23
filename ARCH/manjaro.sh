@@ -1,15 +1,31 @@
-# yay
-git clone https://aur.archlinux.org/yay-git.git
+################# yay
+sudo pacman -S git
+cd /opt
+sudo git clone https://aur.archlinux.org/yay-git.git
+sudo chown -R andrii:andrii ./yay-git
 cd yay-git
+sudo pacman -S --needed base-devel
 makepkg -si
+
+##### use yay (https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)
+sudo yay -Syu
+
+# gparted
+sudo yay -S gparted
 
 # yay - chrome
 yay -S google-chrome
 
 # make
 sudo pacman -S make
+
 # neovim
 sudo pacman -Syu neovim
+
+##### Helix 
+# helix https://docs.helix-editor.com/install.html#arch-linux-extra
+sudo pacman -S helix
+helix --health
 
 # snap
 sudo pacman -S snapd
