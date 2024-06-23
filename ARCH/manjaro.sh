@@ -1,3 +1,7 @@
+### Misc tools
+
+sudo pacman -S git tmux neovim zip unzip exa
+
 ################# yay
 sudo pacman -S git
 cd /opt
