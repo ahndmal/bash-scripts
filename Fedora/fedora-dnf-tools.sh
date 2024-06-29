@@ -30,6 +30,9 @@ sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo systemctl start docker
 sudo docker run hello-world
 
-########################
+######################## Haskell related tools
+## GHCUP
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 
+sudo dnf install libicu-devel ncurses-devel zlib-devel
 
