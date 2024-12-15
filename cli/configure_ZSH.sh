@@ -37,3 +37,5 @@ echo "plugins=( git zsh-syntax-highlighting zsh-autosuggestions )" >> ~/.zshrc
 p10k configure
 
 source ~/.zshrc
+
+echo ">>> Successfully configured ZSH!"
