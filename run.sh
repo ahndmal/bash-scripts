@@ -3,7 +3,7 @@ X_COLOR="\u001b[36m"
 COLOR_RESET='\u001b[0m'
 echo ">>>> ${X_COLOR} Initiating environment configuration ${COLOR_RESET}"
 
-echo 
+echo "" 
 
 
 ######################## CLI
