@@ -1,6 +1,6 @@
 ### Misc tools
 
-sudo pacman -S git tmux neovim emacs zip unzip eza 
+sudo pacman -S git tmux neovim emacs zip unzip eza helix zellij nvm pyenv alacritty zsh-autosuggestions zsh-syntax-highlighting
 
 ################# yay
 sudo pacman -S git
