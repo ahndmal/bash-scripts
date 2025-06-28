@@ -1,16 +1,16 @@
 echo "...Installing Haskell tools..."
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
-ghcup install ghc 8.10.4
-ghcup set ghc 8.10.4
-ghcup install cabal 3.2.0.0
 
-#  cabal init --interactive
+/*
+To start a simple repl, run:
+  ghci
 
-#To install other GHC versions and tools, run:
-#  ghcup tui
+To start a new haskell project in the current directory, run:
+  cabal init --interactive
 
-#If you are new to Haskell, check out https://www.haskell.org/ghcup/steps/
+To install other GHC versions and tools, run:
+  ghcup tui
 
-# resolve /usr/bin/ld: cannot find -lgmp error
-sudo apt-get install libgmp3-dev
+If you are new to Haskell, check out https://www.haskell.org/ghcup/steps/
 
+*/
