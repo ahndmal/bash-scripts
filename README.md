@@ -1,6 +1,6 @@
 # bash-scripts
 
-Some basic BASH scripts for installation and configuration of tools/programs for cloud programming (usually Ubuntu / JVM related).
+Some basic bash scripts for installation and configuration of tools/programs for cloud programming (usually Ubuntu / JVM related).
 
 ## SSH
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
@@ -17,17 +17,18 @@ Generate SSH: ``` ssh-keygen -t ed25519 -C "quadr988@gmail.com" ```
 ## Tools
 
 - Oh My ZSH (https://ohmyz.sh/)
+- Fish (https://fishshell.com/)
 - Helix editor (https://docs.helix-editor.com/keymap.html)
 - nvim
+- emacs
 - docker (https://docs.docker.com/engine/install/ubuntu/)
 - snapd
-- 
 
 ### Atlassian
 - https://marketplace.atlassian.com/apps/1210993/atlassian-plugin-sdk-tgz?hosting=server&tab=overview
 
 ### Colored CLI
-- Exa (sudo apt install exa)
+- eza (sudo apt install eza)
 - Colours (https://github.com/athityakumar/colorls?tab=readme-ov-file#installation)
 
 ### CMake
@@ -48,7 +49,6 @@ Generate SSH: ``` ssh-keygen -t ed25519 -C "quadr988@gmail.com" ```
 
 ### Python
 - pyenv (https://github.com/pyenv/pyenv)
-- 
 
 ### Go
 
@@ -57,6 +57,9 @@ Generate SSH: ``` ssh-keygen -t ed25519 -C "quadr988@gmail.com" ```
 ### Rust
 - https://www.rust-lang.org/tools/install
 ```bash curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh ```
+
+### Haskell
+- ghcup (https://www.haskell.org/ghcup/)
 
 ### WASM
 
