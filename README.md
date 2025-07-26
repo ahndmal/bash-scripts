@@ -1,6 +1,6 @@
 # bash-scripts
 
-Some basic bash scripts for installation and configuration of tools/programs for cloud programming (usually Ubuntu / JVM related).
+Some basic bash scripts for installation and configuration of tools/programs for programming (mostly JVM related).
 
 ## SSH
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
