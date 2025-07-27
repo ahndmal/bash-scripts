@@ -1,5 +1,4 @@
 
-
 #################### wasmtime (https://github.com/bytecodealliance/wasmtime)
 curl https://wasmtime.dev/install.sh -sSf | bash
 
@@ -48,5 +47,9 @@ source ./emsdk_env.sh
 # ./emsdk install 1.38.45
 ./emsdk install latest
 
+### Graalwasm (https://github.com/oracle/graal/tree/master/wasm)
+wget https://gds.oracle.com/download/wasm/archive/graalwasm-24.2.0-linux-amd64.tar.gz
 
+##### WASI SDK (https://github.com/WebAssembly/wasi-sdk/releases)
 
+wget https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-25/wasi-sdk-25.0-x86_64-linux.tar.gz

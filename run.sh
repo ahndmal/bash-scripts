@@ -5,44 +5,17 @@ echo ">>>> ${X_COLOR} Initiating environment configuration ${COLOR_RESET}"
 
 OS_ID=$(grep '^ID=' /etc/os-release | cut -d'=' -f2 | tr -d '"')
 
-######################## CLI
-
-source fish/configure_fish.sh
-
 ######################## ZSH
 
-source cli/configureZSH.sh
+source cli/configure_ZSH.sh
 
-######################## Helix
+### Editors
 
-if [ "$OS_ID" == "ubuntu" ]; then
-    echo "Running on Ubuntu."
+source ./editors/emacs.sh
 
-    sudo add-apt-repository ppa:maveonair/helix-editor
-    sudo apt update
-    sudo apt install helix
-elif [ "$OS_ID" == "fedora" ]; then
-    echo "Running on Fedora."
+source ./editors/install-helix.sh
 
-    sudo dnf install helix
-
-elif [ "$OS_ID" == "arch" ]
-    echo "Running arch"
-
-    sudo pacman -S helix
-else
-    #    
-fi
-
-######################## Neovim
-
-mkdir ~/.config/nvim
-
-#https://github.com/junegunn/vim-plug
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
-wget -P ~/.config/nvim https://raw.githubusercontent.com/ahndmal/dotfiles/refs/heads/main/.config/nvim/init.vim
+source ./editors/configure-nvim.sh
 
 ######################### Browsers
 
@@ -64,7 +37,7 @@ source cloud-native/pack=cli.sh
 
 source tools/sdkman.sh
 
-source frame/helidon-cli.sh
+#source frame/helidon-cli.sh
 
 ####################### Python
 

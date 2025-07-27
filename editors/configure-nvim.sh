@@ -3,10 +3,7 @@
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-# get init.vim example file
-wget https://github.com/ahndmal/.dotfiles/raw/main/.config/nvim/init.vim
-
 mkdir ~/.config/nvim
 
-mv init.vim ~/.config/nvim
+wget -P ~/.config/nvim https://raw.githubusercontent.com/ahndmal/dotfiles/refs/heads/main/.config/nvim/init.vim
 

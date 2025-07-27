@@ -7,20 +7,19 @@ sdk version
 echo "zip/unzip/SDK installed!"
 
 # java
-sdk i java 8.0.302-open -y  # change to the latest !
-sdk i java 11.0.12-open -y
-# sdk i java 18.0.2-open -y
+sdk i java
 
 # maven / gradle
 yes | sdk i maven 3.8.6
-sdk i gradle 7.5 -y
+
+sdk i gradle
 echo "maven/gradle installed!"
 
 # groovy
-sdk i groovy 4.0.0 -y
+sdk i groovy
 
-#sdk use java 8.0.302-open
-sdk default java 8.0.302-open
+# kotlin
+sdk i kotlin
 
 #quarkus/spring
 sdk install quarkus

@@ -7,3 +7,4 @@ wget -P ~/ https://github.com/ahndmal/dotfiles/raw/refs/heads/main/.config/.emac
 
 wget -P ~/ https://github.com/ahndmal/dotfiles/raw/refs/heads/main/.config/.emacs.d/mini-emacs.el
 
+echo " >>> Emacs installed!"
