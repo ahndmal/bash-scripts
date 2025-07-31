@@ -5,8 +5,9 @@ cd wabt
 git submodule update --init
 
 # install cmake (pacman / apt)
-wget https://github.com/Kitware/CMake/releases/download/v3.26.0-rc5/cmake-3.26.0-rc5.tar.gz
-tar -xvf cmake-3.26.0-rc5.tar.gz
+sudo pacman -S cmake
+# wget https://github.com/Kitware/CMake/releases/download/v3.26.0-rc5/cmake-3.26.0-rc5.tar.gz
+# tar -xvf cmake-3.26.0-rc5.tar.gz
 
 # build
 mkdir build
