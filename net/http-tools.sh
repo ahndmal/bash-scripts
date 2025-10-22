@@ -1,15 +1,22 @@
+## prereq
 
 sudo apt-get install build-essential meson libncurses6-dev
 
-sudo apt-get install -y curl vnstat nmap net-tools
+## net tools
 
+sudo apt-get install -y curl vnstat nmap net-tools
 sudo apt-get install nghttp2
 
-# snapd
+## snapd
+
 sudo apt update
 sudo apt-get install snapd
 
+## httpie
+
 snap install httpie
 
+## wrk
 
+sudo apt-get install wrk
 
