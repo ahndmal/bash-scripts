@@ -2,7 +2,6 @@
 ### artillery https://www.artillery.io/
 npm install -g artillery
 
-
 ### curl https://pyenv.run | bash
 # pyenv install 3.10.4
 
